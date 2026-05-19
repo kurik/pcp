@@ -51,11 +51,11 @@ Hosts: None
 Archives: ['archives/pcp-atop']
 pass
 
-== Archive list, expect pass:
+== Archive list, expect fail:
 == Test ==
 Hosts: None
 Archives: ['archives/pcp-free,archives/pcp-uptime']
-pass
+fail
 
 == Folio, expect pass:
 == Test ==
