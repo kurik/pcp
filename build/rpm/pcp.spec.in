@@ -794,7 +794,9 @@ License: GPL-2.0-or-later
 Summary: Performance Co-Pilot (PCP) System and Monitoring Tools
 URL: https://pcp.io
 Requires: pcp = @package_version@ pcp-libs = @package_version@
+%if 0%{?rhel} == 0 || 0%{?rhel} > 7
 Recommends: pcp-atop = @package_version@
+%endif
 Requires: pcp-htop = @package_version@
 Obsoletes: pcp-system-tools-debuginfo < @package_version@
 %if "@have_python@" == "true"
